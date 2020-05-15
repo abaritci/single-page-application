@@ -1,0 +1,199 @@
+body {
+    font-size: 16px;
+    background: #fefefe;
+}
+
+div#app {
+    width: 90%;
+    margin: auto;
+}
+
+.content {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.github-user-item, .github-repository-item {
+    float: left;
+    width: 17%;
+    border: 1px solid #e3e8ef;
+    margin: 6px;
+    padding: 10px;
+    min-height: 130px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 35%;
+    left: 45%;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0095ff;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+nav.navigation {
+    height: 50px;
+    background: #ebecf7;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #a8a8b9;
+}
+
+a.menu-item:link,
+a.pagination-item:link,
+a.previous-item:link,
+a.menu-item:visited,
+a.pagination-item:visited,
+a.previous-item:visited {
+    background-color: #b3b3d0;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.home-page {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.menu-item:hover,
+a.pagination-item:hover,
+a.previous-item:hover,
+a.menu-item:active,
+a.pagination-item:active,
+a.previous-item:active {
+    background-color: #0095ff;
+}
+
+a.menu-item.active,
+a.pagination-item:active,
+a.previous-item:active {
+    background-color: #0095ff;
+}
+
+.github-user-item-image {
+    background-color: #c7c1c1;
+    border-radius: 5px;
+    width: 110px;
+    height: 105px;
+    padding-top: 3px;
+    margin-left: 25%;
+}
+
+.button {
+    background-color: #b3b3d0;
+    border: none;
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+a.button:hover {
+    background-color: #0095ff;
+}
+
+div#users-content, div#repositories-content, div#user-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+}
+.title {
+    width: 95%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+.logo {
+    float: left;
+}
+
+header#header {
+    height: 60px;
+}
+
+.pagination {
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+}
+
+input#search {
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid #b3b3d0;
+}
+
+.search {
+    text-align: left;
+}
+
+.previous {
+    margin-right: 100%;
+    width: 95px;
+    position: absolute;
+    top: 135px;
+}
+
+.more-details {
+    width: 100%;
+    text-align: center;
+}
+
+.user-details {
+    width: 83%;
+    text-align: left;
+}
+span.details-item {
+    font-weight: 600;
+}
+.copyright {
+    padding: 40px;
+    margin-top: 15px;
+}
